@@ -1,0 +1,14 @@
+.paddingbx
+{
+  padding:0px 25px;
+}
+.navbar-nav .navbar-center{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+   }
+.active{
+    border-bottom: 2px solid white;
+    color:rgb(233, 20, 20);
+    font-size: 20px;
+}
