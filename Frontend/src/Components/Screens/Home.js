@@ -41,6 +41,8 @@ const handlecommentText=(e)=>{
     console.log(e.target.value)
     setComment(e.target.value)
 }
+
+
 const comments=(text,blogid)=>{
    console.log(blogid+""+text);
     fetch('/comment',{

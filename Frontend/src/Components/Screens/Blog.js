@@ -52,6 +52,7 @@ function Blog() {
      // setBlog(data.blogs.map(blog=>blog.Writer._id===JSON.parse(localStorage.getItem('User'))._id?blog:""))
      //setBlog(data.blogs)
      console.log(data.blogs)
+     window.location.reload()
       if(msg.success)
       {
         toast.success(msg.success,{

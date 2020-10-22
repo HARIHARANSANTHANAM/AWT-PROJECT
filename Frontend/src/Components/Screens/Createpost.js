@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import { useHistory } from 'react-router-dom';
 import CKEditor from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
+// import ImageInsert from '@ckeditor/ckeditor5-image/src/imageupload';
 import {toast,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 //import parser from 'react-html-parser'
@@ -14,15 +14,7 @@ function Createpost() {
   
   const [user,setuser]=useState("");
  const History=useHistory()
-  ClassicEditor.create(document.querySelector('#editor'),{
-      image:{
-          upload:{
-              panel:{
-                  items:['insertImageViaUrl']
-              }
-          }
-      }
-  })
+  
   
   useEffect(() => {
     setuser(JSON.parse(localStorage.getItem('User'))?JSON.parse(localStorage.getItem('User'))._id:History.push('/Login'))

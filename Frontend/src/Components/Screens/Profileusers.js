@@ -67,7 +67,7 @@ function Profileusers(props) {
         fetch('/follow',{
             method:"put",
             headers:{
-                "Content-Type":"apllication/json"
+                "Content-Type":"application/json"
             },
             body:JSON.stringify({
                 followid:props.match.params.id,

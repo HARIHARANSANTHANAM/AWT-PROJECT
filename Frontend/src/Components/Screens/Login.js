@@ -8,7 +8,7 @@ import Navbar from './Navbar';
 function Login() {
   const history=useHistory();
   const [Username, setUsername] = useState('');
-  const [Password, setPassword] = useState('');
+  const [Password, setPassword] = useState('');//function setPassword(pass){password=pass;}
   const handleSubmit=(e)=>{
     e.preventDefault();
   fetch('/Signin',{
